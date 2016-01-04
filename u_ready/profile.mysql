@@ -1,0 +1,6 @@
+CREATE DATABASE `profile` ;
+CREATE TABLE `profile`.`edit` (
+`profile_image` VARCHAR( 235 ) NOT NULL,
+`grade_point_average` VARCHAR( 25 ) NOT NULL ,
+`grade` INT() NOT NULL ,
+) ENGINE = MYISAM ;
