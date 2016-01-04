@@ -1,12 +1,11 @@
-/* http://www.menucool.com */
 
 #sliderFrame, #sliderFrame div {
     box-sizing: content-box;
 }
-/*slider frame*/
+
 #sliderFrame {
     width:960px; 
-    margin: 0 auto; /*center-aligned*/
+    margin: 0 auto; 
     background-color:White; 
     padding-top:6px; 
     border-radius: 6px 6px 0 0;
@@ -21,11 +20,10 @@
 #slider {
 	background:transparent url(loading.gif) no-repeat 50% 50%;
 	position:relative;
-	margin:0 auto; /*center-aligned*/
+	margin:0 auto;
     transform: translate3d(0,0,0);
 }
 
-/* the link style (if slide image is wrapped in a link) */
 #slider a.imgLink, #slider .video {
 	z-index:2;
 	position:absolute;
@@ -36,21 +34,20 @@
 	background:transparent url(video.png) no-repeat 50% 50%;
 }
 
-/* Caption styles */
+
 #slider div.mc-caption-bg, #slider div.mc-caption-bg2 {
 	position:absolute;
 	width:190px;
 	height:auto;
 	padding:20px;
-	right:30px; /* or left: ??px; */
-	bottom:30px;/* or top: ??px; */
+	right:30px; 
+	bottom:30px;
 	z-index:3;
 	overflow:hidden;
 	font-size:0;
 }
 #slider div.mc-caption-bg {
-    /* NOTE: Its opacity is to be set through the sliderOptions.captionOpacity setting in the js-image-slider.js file.*/
-	background:White;/* or any other colors such as Black, or: background:none; */
+	background:White;
 	border-radius: 5px;
 }
 #slider div.mc-caption-bg2 {
@@ -94,7 +91,7 @@
 
 #slider div.sliderInner {
 	overflow:hidden; 
-	-webkit-transform: rotate(0.000001deg);/* fixed the Chrome not crop border-radius bug*/
+	-webkit-transform: rotate(0.000001deg);
 	position:absolute; top:0; left:0;
 }
 
@@ -103,7 +100,7 @@
 
 
 
-/* -- thumbnails -- */
+
 #thumbs
 {
 	background:white url(thumbs-bar.gif) repeat-x 0 0;
@@ -119,7 +116,7 @@
     border-left:1px solid #FFF; border-right:1px solid #DDD; 
     
     display:inline-block;
-    *display:inline;zoom:1; /*IE Hack*/
+    *display:inline;zoom:1; 
 }
 #thumbs .thumb-on {background-image: url(active-bg.png);}
 #thumbs .thumb img {vertical-align:middle;}
